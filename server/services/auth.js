@@ -1,7 +1,7 @@
 var jwt = require('express-jwt');
 const jwksRsa = require('jwks-rsa');
 
-// const namespace='http://localhost:3000/';
+const namespace=config.NAMESPACE;
 
 exports.checkJWT=jwt({
     secret: jwksRsa.expressJwtSecret({
@@ -17,7 +17,7 @@ exports.checkJWT=jwt({
 
   exports.checkRole = role=>(req,res,next)=>{
       const user=req.user;
-      if(user && (user[process.env.NAMESPACE+'/role']===role)){
+      if(user && (user[NAMESPACE+'/role' &&(user[NAMESPACE+'/role'])]===role)){
         next();
       }else{
         return res.status(404).send({title:'Not authorized',body:"You're noy authorized to access to this data"})
