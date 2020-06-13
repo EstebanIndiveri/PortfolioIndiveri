@@ -111,25 +111,25 @@ app.prepare().then(() => {
     })
 
     
-    server.get('*',(req,res)=>{
-        return handle(req,res)
+    server.get('*', (req, res) => {
+      return handle(req, res)
     })
-
-
+  
     server.use(function (err, req, res, next) {
-        if (err.name === 'UnauthorizedError') {
-          res.status(401).send({title:'Unauthorizer',detail:'Unauthorized Access for this page'});
-        }
-      });
-
-      const PORT=process.env.PORT || 3000;
-
-    server.use(handle)
-    .listen(3000, (err) => {
-    if (err) throw err
-    console.log('> Ready on '+ PORT)
+      if (err.name === 'UnauthorizedError') {
+        res.status(401).send({title: 'Unauthorized', detail: 'Unauthorized Access!'});
+      }
+    });
+  
+    const PORT = process.env.PORT || 3000;
+  
+    server.use(handle).listen(PORT, (err) => {
+      if (err) throw err
+      console.log('> Ready on port ' + PORT)
+    })
   })
-}).catch((ex)=>{
+  .catch((ex) => {
     console.error(ex.stack)
     process.exit(1)
-})
+  })
+  
