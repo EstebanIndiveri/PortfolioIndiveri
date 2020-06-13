@@ -70,3 +70,29 @@ html,body{
     background: rgb(234, 202, 249);
     box-shadow: 2px 2px 5px 2px #e1e1e1;
 }
+
+//Barra y demás:
+html {
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  width: 8px;
+  border-radius:10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #e1e1e1; 
+  border-radius:10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #EACAF9; 
+  border-radius:10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(210, 177, 226); 
+}
