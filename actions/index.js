@@ -53,18 +53,14 @@ export const createPortfolio = async (portfolioData) => {
     .catch(error => rejectPromise(error))
 }
 
-export const updatePortfolio=async(portfolioData)=>{
-    const url= '/portfolios';
-    return await axiosInstance.patch(`${url}/${portfolioData._id}`,portfolioData,setAuthHeader())
-    .then(response=>{
-        response.data
-    })
-    .catch(error=> rejectPromise(error))
+export const updatePortfolio = async (portfolioData) => {
+  return await axiosInstance.patch(`/portfolios/${portfolioData._id}`, portfolioData, setAuthHeader())
+    .then(response => response.data)
+    .catch(error => rejectPromise(error))
 }
 
-export const deletePortfolio=(portfolioId)=>{
-    const url= '/portfolios';
-    return axios.delete(`${url}/${portfolioId}`,setAuthHeader()).then(response=>response.data);
+export const deletePortfolio = (portfolioId) => {
+  return axiosInstance.delete(`/portfolios/${portfolioId}`, setAuthHeader()).then(response => response.data);
 }
 
 //bg
