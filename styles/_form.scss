@@ -1,0 +1,22 @@
+    .msg{
+    text-align: center;
+    margin:0 auto;
+    margin-bottom: 10px;
+    letter-spacing: 0.2rem;
+    font-style: italic;
+    padding:  3px;
+    font-size: 16px;
+    font-weight: bold;
+    color:#EACAF9;
+
+    display: none;
+  }
+  .msgAppear{
+    display: block;
+    animation: fadein 1s;
+    @keyframes fadein {
+      from { opacity: 1; }
+      to   { opacity: 0; }
+    }
+ 
+  }

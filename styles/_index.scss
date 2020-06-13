@@ -1,0 +1,131 @@
+
+.cover {
+  // background-image: linear-gradient(45deg, #323232 0%, #e1e1e1 179%);
+    // background-image: linear-gradient(45deg,#00aeef 0%,#096fb9 100%);
+    // background-image: linear-gradient(0deg, #e2e2e2 0%, #e4c7f0 100%);
+    // background-image: linear-gradient(0deg, #e2e2e2 0%, #e4c7f050 100%);
+    // background-image: url('../public/bk.jpg');
+    // background-image: linear-gradient(-76deg, darkviolet 0%, #e4c7f0 100%) #e4c7f070;
+     overflow: hidden;
+    position: relative;
+  }
+  
+  .wrapper {
+    min-height: 100vh;
+    min-width: 100vw;
+    margin-top: 0;
+    position: relative;
+  }
+  
+  .main-section {
+    top: 150px;
+    width: 100%;
+    padding: 150px 0 0;
+  }
+  
+  .hero-section{
+    h2 {
+      color: black;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+  
+    perspective: 1000px;
+    color: white;
+    width: 400px;
+    position: relative;
+  
+    &-content {
+      position: absolute;
+      bottom: 20px;
+      width: 360px;
+      left: 6%;
+      z-index: 1;
+  
+      &-intro {
+        font-size: 17px;
+      }
+    }
+  }
+  
+  .image {
+    width: auto;
+    max-width: 100%;
+  }
+  
+  .hero-welcome-text > h1 {
+    color: black;
+    text-transform: uppercase;
+    font-size: 22px;
+    margin-top: 80px;
+
+    text-align: center;
+  }
+  
+  .hero-welcome-bio {
+    margin-top: 20px;
+    color: black;
+    
+    text-align: center;
+  
+    .fa-stack {
+      font-size: 28px;
+    }
+  
+    .list-inline-item {
+      > a {
+        color: #373737;
+      }
+    }
+    h1{
+      font-size: 2rem;
+    }
+  }
+  
+  .hero-welcome-wrapper {
+    justify-content: flex-end;
+  
+  }
+  
+  @media (max-width: 991px) {
+    .hero-section {
+      width: 341px;
+  
+      &-content {
+        width: 341px;
+      }
+    }
+  
+    .hero-welcome-text > h1 {
+      margin-top: 0px;
+    }
+  }
+  
+  .background-image {
+    position: absolute;
+    width: 1762px;
+    height: 493px;
+  }
+  
+  .shadow-custom {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    // box-shadow: -17px 13px 41px rgba(13,78,158,0.6);
+    box-shadow: -17px 13px 41px rgba(24, 24, 24, 0.6);
+    // border: 2px solid #3bace5;
+    border:1px solid #323232;
+  
+    .shadow-inner {
+      width: 100%;
+      height: 100%;
+      box-shadow: -17px 13px 13px rgba(0,0,0,0.09);
+    }
+  }
+  
+  .shadow-custom-2 {
+    border: 2px solid #f37d49;
+    box-shadow: -17px 13px 41px rgba(13,78,158,0.3);
+  }
+  

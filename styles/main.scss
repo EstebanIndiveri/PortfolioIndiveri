@@ -1,0 +1,72 @@
+@import './shared/fonts';
+@import './index';
+@import './header';
+@import './shared/color';
+@import './portfolios';
+@import './blog';
+@import './slate-editor';
+@import './about';
+@import './shared/mixins';
+@import './cv';
+@import './form';
+html,body{
+    font-family: 'Montserrat','Helvetica' !important;
+    height:100%;
+    width:100%;
+}
+
+.clickable{
+    cursor: pointer;
+}
+
+.self-typed{
+    font-size: 31px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color:black;
+    text-align: center !important;
+}
+.absolute {
+    position: absolute !important;
+  }
+
+.error{
+  color:#f00606;
+  font-size: 12px;
+}
+
+.base-page {
+    // padding-top: 150px;
+    padding:150px 0 80px 0;
+    color: #323232;
+    background-color: #FFFFFF;
+    min-height: 100vh;
+    
+    .page-header {
+      .page-header-title {
+        font-weight: 700;
+        color: black;
+        display: inline-block;
+        margin-bottom: 20px;
+      }
+    }
+  }
+.cardin{
+  @include animation(fadein 2s);
+  @keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+}
+
+.socialLink{
+  transition: all 300ms;
+  &:hover{
+    transform: translateY(-3px);
+  }
+}
+#btn-login-radius{
+  border-radius: 20px;
+    background: rgb(234, 202, 249);
+    box-shadow: 2px 2px 5px 2px #e1e1e1;
+}
