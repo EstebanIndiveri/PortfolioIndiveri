@@ -15,7 +15,7 @@ import { getBlogs } from '../actions';
 
 
 const Div=styled.div`
-background-image:url("/static/img/bk-blog.jpg") !important;
+background-image:url("/static/img/bk-blogweb.webp") !important;
 animation: fadein 2s;
   @keyframes fadein {
     from { opacity: 0; }

@@ -12,7 +12,7 @@ import {faTwitter} from'@fortawesome/free-brands-svg-icons';
 
 
 const ContainerC=styled.div`
-  background-image:url("/static/img/0003.jpg");
+  background-image:url("/static/img/0003web.webp");
   background-size:cover;
   background-repeat:no-repeat;
   animation: fadein 2s;
