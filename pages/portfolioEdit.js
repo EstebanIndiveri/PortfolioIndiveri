@@ -33,18 +33,18 @@ class PortfolioEdit extends Component {
     
 updatePortfolio(portfolioData,{setSubmitting}){
     setSubmitting(true);
-        updatePortfolio(portfolioData)
-            .then(portfolio=>{
-            setSubmitting(false);
-            this.setState({error:undefined})
-            Router.pushRoute('/portfolios');
-            })
-            .catch(err=>{
-                const error=err.message || 'Server Error!';
-                setSubmitting(false);
-                this.setState({error});
-            });
-}
+    updatePortfolio(portfolioData)
+      .then((portfolio) => {
+        setSubmitting(false);
+        this.setState({error: undefined});
+        Router.pushRoute('/portfolios');
+      })
+      .catch((err) => {
+        const error = err.message || 'Server Error!';
+        setSubmitting(false);
+        this.setState({error});
+      })
+  }
 
 
     render() {

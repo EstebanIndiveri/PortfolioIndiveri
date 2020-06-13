@@ -17,7 +17,8 @@ const INITIAL_VALUES={
     description:'',
     startDate:moment(),
     endDate:moment(),
-    imageUrl:''
+    imageUrl:'',
+    url:''
     }   
 
 

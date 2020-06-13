@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import BaseLayout from '../../components/layout/BaseLayout';
 import {withRouter} from 'next/router';
-import Axios from 'axios';
+import axios from 'axios';
 import BasePage from '../../components/BasePage';
 
 
@@ -10,7 +10,7 @@ import BasePage from '../../components/BasePage';
         let post={};
         const postId=context.query.id
         try {
-            const response=await Axios.get(`http://jsonplaceholder.typicode.com/posts/${postId}`);
+            const response=await axios.get(`http://jsonplaceholder.typicode.com/posts/${postId}`);
             post=response.data;
         } catch (error) {
             console.log(error);            

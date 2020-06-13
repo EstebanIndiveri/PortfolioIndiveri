@@ -77,6 +77,12 @@ const PortfolioCreateForm = ({initialValues,onSubmit,error}) => (
             label="imageUrl" 
             component={PortInput}
             />
+            <Field  
+            type="text" 
+            name="url"
+            label="Web page" 
+            component={PortInput}
+            />
 
             <Field  
             name="startDate"
