@@ -48,7 +48,7 @@ import {getCookieFromReq} from '../helpers/utils';
         Cookies.remove('jwt');
         // Cookies.remove('expiresAt');
         this.auth0.logout({
-            returnTo:'',
+            returnTo:'https://indiveriportfolio.herokuapp.com',
             clientID:CLIENT_ID
         })
     }
