@@ -101,7 +101,7 @@ export default class ContactForm extends Component {
 
     render() {
         return (
-            <BaseLayout >
+            <BaseLayout {...this.props.auth}>
              <BasePage className='portfolio-create-page' title="Conctact with me"> 
              <div className={this.state.sent?'msg msgAppear':'msg'}>Message has been send</div>
                 <Row>
