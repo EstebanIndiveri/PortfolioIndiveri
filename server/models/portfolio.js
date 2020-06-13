@@ -11,7 +11,6 @@ const portfolioSchema=new Schema({
     description:{type:String,required:true,maxlength:256},
     startDate:{type:Date,maxlength:256},
     endDate:Date,
-    imageUrl:String
     // selectedFile:String
 });
 

@@ -47,13 +47,10 @@ export const getPortfolioById=async(id)=>{
     return await axiosInstance.get(`${url}/${id}`).then(response=>response.data);
 }
 
-export const createPortfolio=async(portfolioData)=>{
-    const url= '/portfolios';
-    return await axiosInstance.post(url,portfolioData,setAuthHeader())
-    .then(response=>{
-        response.data
-    })
-    .catch(error=> rejectPromise(error))
+export const createPortfolio = async (portfolioData) => {
+  return await axiosInstance.post('/portfolios', portfolioData, setAuthHeader())
+    .then(response => response.data)
+    .catch(error => rejectPromise(error))
 }
 
 export const updatePortfolio=async(portfolioData)=>{
