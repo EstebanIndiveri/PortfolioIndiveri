@@ -4,7 +4,6 @@ import BasePage from '../components/BasePage';
 import withAuth from '../components/hoc/withAuth';
 import {Container, Row, Col,Button  } from 'reactstrap';
 import{getUserBlogs,updateBlog, deleteBlog}from'../actions'
-import SocialLinks from '../components/SocialLinks';
 import {Link,Router} from '../routes';
 import PortButtonDropdown from '../components/ButtonDropdown';
 

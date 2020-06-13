@@ -11,8 +11,6 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faInstagram} from '@fortawesome/free-brands-svg-icons';
 import {faLinkedinIn} from'@fortawesome/free-brands-svg-icons';
 import {faTwitter} from'@fortawesome/free-brands-svg-icons';
-
-import SocialLinks from '../components/SocialLinks';
 import { getBlogs } from '../actions';
 
 

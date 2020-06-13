@@ -20,10 +20,9 @@ const BaseLayout=(props)=>{
                 <meta property="og:type" content="website" />
                 <meta property="og:description" content="My name is Esteban and I am an experienced software engineer and freelance developer. I have a experience working on a wide range of technologies and projects in C#,Flutter,Kotlin, and web applications created with Javascript in React and Angular." />
                 <link rel="icon" type="image/ico" href="/static/favicon.png" />
-                
+                <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"/>
                 {cannonical &&<link rel="cannonical" href={`${process.env.NAMESPACE}${cannonical}`}></link>}
                 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
-            {/* <script src="https://kit.fontawesome.com/2e6b7f17a9.js" crossOrigin="anonymous"></script> */}
             
             </Head>
         <div className="layout-container" >
