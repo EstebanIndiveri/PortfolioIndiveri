@@ -1,6 +1,6 @@
 var jwt = require('express-jwt');
 const jwksRsa = require('jwks-rsa');
-
+const config=require('../config');
 const namespace=config.NAMESPACE;
 
 exports.checkJWT=jwt({

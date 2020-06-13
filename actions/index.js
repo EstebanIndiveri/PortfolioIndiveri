@@ -48,7 +48,7 @@ export const getPortfolioById=async(id)=>{
 }
 
 export const createPortfolio=async(portfolioData)=>{
-    const url= 'http://localhost:3000/api/v1/portfolios';
+    const url= '/portfolios';
     return await axiosInstance.post(url,portfolioData,setAuthHeader())
     .then(response=>{
         response.data
@@ -88,7 +88,7 @@ export const getBlogs = async (req) => {
 
 
 export const createBlog = (blogData, lockId) => {
-  return axiosInstance.post(`http://localhost:3000/api/v1/blogs?lockId=${lockId}`, blogData, setAuthHeader())
+  return axiosInstance.post(`/blogs?lockId=${lockId}`, blogData, setAuthHeader())
           .then(response => response.data)
           .catch(err => rejectPromise(err))
 }
