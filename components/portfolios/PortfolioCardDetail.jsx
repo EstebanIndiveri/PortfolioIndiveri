@@ -42,7 +42,7 @@ class PortfolioCardDetail extends React.Component{
                 <p><b>Start Date: </b>{moment(portfolio.startDate).format('MMMM YYYY')}</p>
                 <p><b>End Date: </b>{portfolio.endDate?moment(portfolio.endDate).format('MMMM YYYY'):'Still Workin'}</p>
                 {portfolio.url?
-               (    <p><b>Web Page: </b><a href={portfolio.url} target="_blank">Movie Page</a></p>)
+               (    <p><b>Web Page: </b><a href={portfolio.url} target="_blank">Visit Page</a></p>)
                :(null)
                 }
                 {
