@@ -19,6 +19,7 @@ const BaseLayout=(props)=>{
                 <meta property="og:url" content={`${process.env.NAMESPACE}`} />
                 <meta property="og:type" content="website" />
                 <meta property="og:description" content="My name is Esteban and I am an experienced software engineer and freelance developer. I have a experience working on a wide range of technologies and projects in C#,Flutter,Kotlin, and web applications created with Javascript in React and Angular." />
+                <meta property="og:image" content="https://i.ibb.co/VqBSZ8q/Esteban-Indiveri-min-1.png" />
                 <link rel="icon" type="image/ico" href="/static/favicon.png" />
                 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"/>
                 {cannonical &&<link rel="cannonical" href={`${process.env.NAMESPACE}${cannonical}`}></link>}
