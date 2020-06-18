@@ -112,7 +112,7 @@ const menuOpenClass=isOpen?'menu-open':'menu-close';
                 <BsNavLink route="/aboutus" title="About"/>
             </NavItem>
             <NavItem className="port-navbar-item">
-                <BsNavLink route="/portfolios" title="Porfolio"/>
+                <BsNavLink route="/portfolios" title="Portfolio"/>
             </NavItem>
             <NavItem className="port-navbar-item">
                 {/* <BsNavLink route="/blogs" title="Blog"/> */}
