@@ -45,7 +45,7 @@
     "jwks-rsa": "^1.8.0",
     "lodash": "^4.17.15",
     "materialize-css": "^1.0.0-rc.2",
-    "moment": "^2.22.2",
+    "moment": "^2.29.4",
     "mongoose": "^5.9.18",
     "morgan": "^1.10.0",
     "multer": "^1.4.2",
